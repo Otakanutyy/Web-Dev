@@ -1,0 +1,44 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: #f0f2f5;
+    font-family: "Roboto", sans-serif;
+}
+
+header{
+    padding: 0px 45px 0px 45px;
+}
+
+header img{
+    display: inline-block;
+    width: 120px;
+    margin-right: 10px;
+}
+
+header nav{
+    display: inline-block;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    font-weight: 100;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+.box{
+
+}
+
+.banner{
+
+}
+
+.leftbanner{
+
+}
+

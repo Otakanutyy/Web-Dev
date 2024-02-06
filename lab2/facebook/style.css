@@ -115,7 +115,8 @@ body{
     font-size: 14px;
     text-align: center;
     margin-top: 20px;
-    padding-left: 55px;
+    align-items: center;
+    margin-left: 60px;
 }
 
 .create_acc a{
