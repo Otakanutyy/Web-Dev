@@ -145,3 +145,38 @@ body{
 .download img{
     width: 130px;
 }
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    text-align: center;
+    align-items: center;
+    font-size: 12px;
+    color: #8a8a8a;
+    justify-content: space-evenly;
+    line-height: 24px;
+}
+
+footer a{
+    text-decoration: none;
+    font-size: 13px;
+    color: #8a8a8a;
+    font-weight: 400;
+    margin-right: 17px;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+footer select{
+    background-color:#f0f2f5 ;
+    border: none;
+    font-size: 13px;
+    color: #8a8a8a;
+    margin-right: 17px;
+    margin-left: -3px;
+}
