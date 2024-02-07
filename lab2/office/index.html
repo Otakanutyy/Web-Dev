@@ -4,28 +4,44 @@
         <meta charset="utf-8">
         <title>Office Home Page</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="images/microicon.png">
     </head>
 
     <body>
         <header>
             <nav>
-                <a href="#"><img src="images/microsoft_logo.png" alt="logo_microsoft"></a>
-                <a href="#"> Microsoft 365</a>
-                <a href="#">Office</a>
-                <a href="#">Windows</a>
-                <a href="#">Поддержка</a>
-                <a href="#">Продукты Майкрософт</a>
-                <a href="#">Поиск</a>
-                <a href="#">Войти</a>
+
+                <div class="micro_logo">
+                    <a href="#" id="logo_a"><img id="micro" src="images/microsoft_logo.png" alt="logo_microsoft"></a>
+                </div>
+
+                <div class="left_nav">
+                    <a href="#"> Microsoft 365</a>
+                    <a href="#"> Office</a>
+                    <a href="#"> Windows</a>
+                    <a href="#"> Поддержка</a>
+                </div>
+
+                <div class="right_nav">
+                    <a href="#"> Все продукты Майкрософт</a> <select id="lang" name="lang"></select></li>
+                    <a href="#"> Поиск <img src="images/poisk.png" alt=""></a>
+                    <a href="#"> Корзина <img src="images/litter.png" alt=""></a>
+                    <a href="#"> Войти <img src="images/login.png" alt=""></a>
+                </div>
+                
             </nav>
             
         </header>
 
         <div class="box">
             <div class="banner">
-                <div class="leftbanner">
-
+                <img class="banner_img" src="images/banner_laptop.jpg" alt="">
+                <div class="text">
+                    <h1>Разработано для жизни - сегодня и в будущем</h1>
+                    <p>Следующее поколение игр. Ваши цели. Друзья и семья. С Windows 11 вы станете еще ближе к тому, что успели полюбить.</p>
+                    <button> Проверьте, готов ли ваш ПК</button>
                 </div>
+
             </div>
 
             <div class="info">

@@ -1,44 +1,84 @@
 body{
     padding: 0;
     margin: 0;
-    background: #f0f2f5;
+    background: #b3b1b1;
     font-family: "Roboto", sans-serif;
+    overflow: hidden;
 }
 
 header{
-    padding: 0px 45px 0px 45px;
+    background: #fff;
+    padding: 20px 80px 20px 80px;
+    overflow: hidden;
+    font-size: 13px;
+    font-weight: lighter;
 }
 
-header img{
-    display: inline-block;
-    width: 120px;
-    margin-right: 10px;
-}
-
-header nav{
-    display: inline-block;
+nav{
+    display: flex; /*default row*/
+    /* justify-content: space-between; main axis */
+    align-items: center; /*cross axis*/
 }
 
 nav a{
     text-decoration: none;
-    font-size: 15px;
     color: black;
-    font-weight: 100;
 }
 
 nav a:hover{
     text-decoration: underline;
 }
 
-.box{
-
+.micro_logo img{
+    width: 110px;
 }
 
-.banner{
-
+.right_nav img{
+    width: 20px;
 }
 
-.leftbanner{
-
+.left_nav{
+    margin-left: 40px;
+    margin-right: 450px;
 }
 
+.left_nav a{
+    
+    margin-right: 15px;
+}
+
+.right_nav{
+    display: flex;
+    align-items: center;
+}
+
+.right_nav a{
+    margin-left: 10px;
+}
+
+.right_nav select{
+    border: none;
+}
+
+.banner_img{
+    position: absolute;
+    z-index: 0;
+}
+
+.text{
+    position: absolute;
+    left: 150px;
+    top: 150px;
+    z-index: 1;
+    width: 420px;
+    color: white;
+}
+
+.text h1{
+    color: white;
+}
+
+.text button{
+    color: white;
+    background-color: blue;
+}
