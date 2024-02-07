@@ -13,6 +13,7 @@ header{
     font-weight: lighter;
 }
 
+/*generic fo nav*/
 nav{
     display: flex; /*default row*/
     /* justify-content: space-between; main axis */
@@ -28,18 +29,12 @@ nav a:hover{
     text-decoration: underline;
 }
 
+/*leftmost logo*/
 .micro_logo img{
     width: 110px;
 }
 
-.right_nav img{
-    width: 20px;
-}
-
-#login_logo{
-    width: 35px;
-}
-
+/*LEFT side of nav*/
 .left_nav{
     margin-left: 40px;
     margin-right: 450px;
@@ -49,6 +44,11 @@ nav a:hover{
     margin-right: 15px;
 }
 
+
+/*right side of nav*/
+.right_nav img{
+    width: 20px;
+}
 .right_nav{
     display: flex;
     align-items: center;
@@ -62,6 +62,11 @@ nav a:hover{
     border: none;
 }
 
+#login_logo{
+    width: 35px;
+}
+
+/*BANNER*/
 .banner{
     display: flex;
     justify-content: center;
@@ -73,6 +78,7 @@ nav a:hover{
     width: 99%;
 }
 
+/*text in banner*/
 .text{
     position: absolute;
     left: 150px;
@@ -91,6 +97,8 @@ nav a:hover{
     line-height: 25px;
 }
 
+
+/*buttons in banner*/
 .text button{
     color: white;
     background-color: #0468b0;
@@ -107,6 +115,7 @@ nav a:hover{
     cursor: pointer;
 }
 
+/*hr in text*/
 .text hr{
     position: relative;
     top: 10.5px;
@@ -115,6 +124,8 @@ nav a:hover{
     border: 2px solid;
 }
 
+
+/*SECTIONS*/
 .section_part{
     margin-top: 30px;
     display: flex;
