@@ -176,18 +176,22 @@ alert('Done!');
 
 //TASK 11
 
+
+function smtask(){
 let i = 3;
 
 while (i) {
   alert( i-- );
 }  //1
+}
 
-let i = 0;
-while (++i < 5) alert( i ); 
+
+let i3 = 0;
+while (++i3 < 5) alert( i3 ); 
 //1 TO 4
 
-let i = 0;
-while (i++ < 5) alert( i );//1 TO 5
+let i2 = 0;
+while (i2++ < 5) alert( i2 );//1 TO 5
 
 for (let i = 0; i < 5; i++) alert( i );
 for (let i = 0; i < 5; ++i) alert( i );
@@ -333,4 +337,34 @@ if (n < 1) {
   alert( pow(x, n) );
 }
 
+//functions expressions
+
+//arrow functions
+
+
+//TASK 14
+function ask(question, yes, no) {
+  if (confirm(question)) yes();
+  else no();
+}
+
+ask(
+  "Do you agree?",
+  function() { alert("You agreed."); },
+  function() { alert("You canceled the execution."); }
+);
+
+//we can send function
+
+//arrow version
+function ask(question, yes, no) {
+  if (confirm(question)) yes();
+  else no();
+}
+
+ask(
+  "Do you agree?",
+  () => alert("You agreed."),
+  () => alert("You canceled the execution.")
+);
 
