@@ -42,3 +42,34 @@ alert( str0.indexOf('Widget') ); // 0, because 'Widget' is found at the beginnin
 alert( str0.indexOf('widget') ); // -1, not found, the search is case-sensitive
 alert( str0.indexOf("id") ); // 1, "id" is found at the position 1 (..idget with id)
 
+//some methods
+
+//TASKS
+//task1
+function upperFirst(str){
+    if (!str) return str;
+    return str[0].toUpperCase() + str.slice(1);
+}
+
+alert( ucFirst("john") ); // John
+
+//task2
+function checkSpam(str){
+    let lowerStr = str.toLowerCase();
+    return lowerStr.includes('viagra') || lowerStr.includes('xxx');
+}
+  
+alert( checkSpam('buy ViAgRA now') );
+alert( checkSpam('free xxxxx') );
+alert( checkSpam("innocent rabbit") );
+
+//task3
+function truncate(str, maxlength) {
+    return (str.length > maxlength) ?
+      str.slice(0, maxlength - 1) + '…' : str;
+}
+
+//task4
+function extractCurrencyValue(str){
+    return +str.slice(1);
+}
