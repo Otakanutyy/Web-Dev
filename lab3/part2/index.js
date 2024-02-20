@@ -1,6 +1,7 @@
 const input_label = document.getElementById("input_label");
 const list_box = document.getElementById("list_box");
 
+
 function addTask(){
     if(input_label.value === ''){
         alert("Write something!");
@@ -25,12 +26,11 @@ function addTask(){
 list_box.addEventListener("click", function(e){
     if(e.target.tagName === "LI"){
         e.target.classList.toggle("checked");
-        storeInfro();
     }
     else if(e.target.tagName === "IMG"){
         e.target.parentElement.remove();
-        storeInfro();
     }
+    storeInfro();
 }, false);
 
 function storeInfro(){

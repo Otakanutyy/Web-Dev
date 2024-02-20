@@ -237,7 +237,7 @@ const number1 = 17;
 console.log(`${number1} is prime:`, isPrime(number1));
 
 
-//switch strcit types
+//switch strict types
 switch(x){
   case 'val1': 
     x = 5;
