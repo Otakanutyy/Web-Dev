@@ -1,0 +1,15 @@
+<button (click)="return()">
+    Return Back
+</button>
+
+<div *ngIf="albumItem">
+    {{albumItem.id}}
+    <br>
+    {{albumItem.title}}
+    <br>
+    {{albumItem.userId}}
+    <br>
+    <button (click)="changeTitle(albumItem)">change Title</button>
+</div>
+
+<a routerLink="./photos">Photos</a>

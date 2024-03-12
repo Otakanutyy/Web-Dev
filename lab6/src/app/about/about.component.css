@@ -1,0 +1,17 @@
+
+
+.simple_box{
+    text-align: center;
+    padding-left: 240px;
+    padding-right: 240px;
+}
+
+.flex{
+    display: flex;
+}
+
+.normal_text{
+    font-size: 23px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}

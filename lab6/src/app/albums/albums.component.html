@@ -1,1 +1,28 @@
-<p>albums works!</p>
+
+<div>
+
+    <form (ngSubmit)="addAlbum()" #addAlbumForm="ngForm">
+        <label for="newTitle">Title</label>
+        <input type="text" id="newTitle" name="newTitle" [(ngModel)]="newAlbumTitle" required>
+        <br>
+        <button type="submit">Add Album</button>
+    </form>
+
+    <button (click)="return()">
+        Return Back
+    </button>
+    
+
+    <h1>TOP Albums: </h1>
+
+    <ol *ngIf="albums.length !== 0">
+        <li *ngFor="let album of albums">
+                <a [routerLink]="['/albums', album.id]">
+                    <h2>{{ album.title }}</h2>
+                </a>
+                <button (click)="delete(album)">Delete this Album</button>
+        </li>
+    </ol>
+</div>
+
+

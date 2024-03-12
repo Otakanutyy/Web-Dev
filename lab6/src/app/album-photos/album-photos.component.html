@@ -1,0 +1,13 @@
+<button (click)="return()">
+    Return Back
+</button>
+
+<div *ngIf="big.length!==0">
+    <div *ngFor="let album of big"> 
+        <img src="{{album.url}}" alt="">
+        <img src="{{album.thumbnailUrl}}" alt="">
+    </div>
+</div>
+
+
+
