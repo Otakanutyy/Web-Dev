@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'Alkatra';
+    src: url(../../assets/Alkatra.ttf);
+}
+
+li, a{
+    font-family: Alkatra;
+    font-size: 16px;
+    text-decoration: none;   
+}
+
+img{
+    height: 50px;
+}
+
+img:hover{
+    cursor: pointer;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: rgb(254,251,246);
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+ul li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+ul li a{
+    transition: all 0.3s ease 0s;
+    color: rgb(41,35,29);
+}
+
+ul li a:hover{
+    color: rgb(151,175,175);
+}
+
+#prof{
+    margin-left: 20px;
+    margin-right: -20px;
+}

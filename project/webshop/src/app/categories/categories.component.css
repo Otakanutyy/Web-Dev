@@ -1,0 +1,22 @@
+
+@font-face {
+    font-family: 'Alkatra';
+    src: url(../../assets/Alkatra.ttf);
+}
+
+#categoryDropdown {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: Alkatra;
+}
+
+#categoryDropdown option {
+    color: #333;
+    background-color: rgb(254,251,246);
+}
+
+#categoryDropdown option[selected] {
+    color: #999;
+}
