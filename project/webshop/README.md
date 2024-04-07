@@ -1,3 +1,7 @@
+Description: Webshop for men suits called "Stylish"
+Group members: Islam Khassangaliyev 22B031195
+
+
 # Webshop
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.0.
