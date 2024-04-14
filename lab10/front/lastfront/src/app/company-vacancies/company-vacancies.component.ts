@@ -1,5 +1,5 @@
 import { NgFor, NgIf } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 
 import { ActivatedRoute, RouterModule } from '@angular/router';
 
@@ -21,7 +21,10 @@ export class CompanyVacanciesComponent implements OnInit{
   // company: Company | undefined ;
   vacancies: Vacancy[]= [];
   companyId: any;
-  constructor(private route: ActivatedRoute, private service: VacanciesService){
+
+
+  constructor(private route: ActivatedRoute, private service: VacanciesService, private cdr: ChangeDetectorRef){
+    
   }
 
   ngOnInit(): void {
@@ -31,8 +34,14 @@ export class CompanyVacanciesComponent implements OnInit{
   }
 
   refreshVacancies() {
-    this.service.fetchVacancies().subscribe(data=>{
+    console.log('Refreshing vacancies...');
+    this.service.fetchVacancies().subscribe(data => {
+      console.log('Data fetched:', data);
       this.vacancies = data.filter(vacancy => vacancy.company_id === this.companyId);
+      console.log('Vacancies:', this.vacancies);
+      this.cdr.detectChanges(); // Trigger change detection
+    }, error => {
+      console.error('Error fetching vacancies:', error);
     });
   }
 }

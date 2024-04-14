@@ -16,7 +16,6 @@ from rest_framework.decorators import APIView
 
 from rest_framework import status, mixins, generics
 
-
 class CompanyListView(generics.ListCreateAPIView):
     queryset = Company.objects.all()
     serializer_class = CompanySerializer
